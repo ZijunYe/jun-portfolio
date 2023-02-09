@@ -1,0 +1,27 @@
+.Container {
+    position:relative;
+    background-color: #FFFDF5;
+    border: 1px solid #000000;
+    border-radius:10px; 
+    margin:20px 20px 20px 20px; 
+    height: 46.5rem;
+}
+
+.main-p{
+    position: absolute;
+    width: 252px;
+    height: 38px;
+    left: 90%;
+    top: 50%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+
+}
