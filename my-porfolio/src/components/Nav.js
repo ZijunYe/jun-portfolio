@@ -1,8 +1,12 @@
 import './main.css'; 
 import React, { Component } from 'react';
+import Time from 'react-time-format';
+import DateTime from './DateTime';
+
  
 class Nav extends Component {
   render() {
+  
     return (
       <div className="navbar">
         <p>Logo</p>
@@ -12,8 +16,9 @@ class Nav extends Component {
              <a className="nav-a" href="zijunye@gmail.ca">GMAIL</a>
             <a className="nav-a" href="https://drive.google.com/drive/search?q=RESUME">RESUME</a>
         </div>
+        <DateTime></DateTime>
 
-
+      
       </div>
     );
   }

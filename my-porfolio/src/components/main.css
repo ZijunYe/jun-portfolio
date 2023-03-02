@@ -14,8 +14,16 @@
     text-decoration: none;
     padding-left: 2rem;
     color: #000000;
-
 }
+.nav-time{
+    right:10px; 
+    position: absolute;
+}
+
+
+
+
+
 .menu{
     background: rgba(191, 190, 186, 0.19);
     border-radius: 15px;
@@ -37,7 +45,6 @@
 .menu-item4{
     margin-top:8px;
 }
-
 
 .menu p{
     margin:0px; 
@@ -64,5 +71,11 @@
 .background-heading{
     font-size:3.5rem; 
     color:#38465A; 
+}
+
+/* Readme frame  */
+.readme{
+    background-color: #fff;
+    border: 1px solid #000000;
 }
 
