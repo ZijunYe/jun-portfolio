@@ -1,6 +1,5 @@
 import './main.css'; 
 import React, { Component } from 'react';
-import Time from 'react-time-format';
 import DateTime from './DateTime';
 
  
@@ -9,7 +8,7 @@ class Nav extends Component {
   
     return (
       <div className="navbar">
-        <p>Logo</p>
+        <img src="./images/ZijunLogo.png" alt='Zijun logo'/>
         <div className='nav-item'>
              <a className="nav-a" href="https://www.linkedin.com/in/zijunye/">LINKEDIN</a>
              <a className="nav-a" href="https://github.com/ZijunYe">GITHUB</a>

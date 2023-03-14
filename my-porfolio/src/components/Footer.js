@@ -5,10 +5,10 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <p >All rights reserved made by zijun © 2023</p>
+        <p >All rights reserved made by zijunye © 2023</p>
       </div>
     );
   }
 }
  
-export default Footer
+export default Footer; 

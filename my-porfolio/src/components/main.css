@@ -1,9 +1,12 @@
 .navbar{
-    background-color: #F3F1EA;
-    border: 1px solid #000000;
-    border-radius: 10px; 
+    background: #CCCCFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height:50px; 
     display:flex; 
+    font-family: 'ChicagoFLFRegular';
+    font-weight: normal;
+    font-style: normal;
 }
 .nav-item{
     margin-top: 1rem;
@@ -16,8 +19,11 @@
     color: #000000;
 }
 .nav-time{
-    right:10px; 
+    right:2.5%; 
     position: absolute;
+}
+.navbar img{
+    margin-left: 1.5%;
 }
 
 
@@ -25,52 +31,48 @@
 
 
 .menu{
-    background: rgba(191, 190, 186, 0.19);
-    border-radius: 15px;
+    top:15%;
+    right:3.5%;  
     height:100px; 
-    
-    bottom:0;
     position: absolute;
-    left: 25%;
     display:flex; 
-}
-.menu-item1, .menu-item2,  .menu-item3, .menu-item4{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    flex-direction: column;
 }
 
 .item p{
     text-align: center;
+    font-family: 'ChicagoFLFRegular';
+    font-weight: normal;
+    font-style: normal;
 }
 .menu-item4{
-    margin-top:8px;
+    padding-left: 10px;
 }
 
-.menu p{
-    margin:0px; 
-}
 
+
+
+
+/* Background text*/ 
 .Background{
     position:absolute; 
     display:flex; 
-    left: 12%;
-    right:10%; 
-    margin-top: 4.5rem;
+    left: 10%;
+    right:30%; 
+    margin-top: 6rem;
 }
 
-.background-img{
-    height: 32rem;
-    width: auto;
-    float: right;
-}
 
 .background-text{
     margin-top: 50px;
-    
 }
+
 .background-heading{
     font-size:3.5rem; 
-    color:#38465A; 
+    color:#333399; 
+    font-family: 'ChicagoFLFRegular';
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Readme frame  */
@@ -79,3 +81,14 @@
     border: 1px solid #000000;
 }
 
+
+/* footer */ 
+.footer{
+    position:relative;
+    top:87%; 
+}
+.footer p{
+    
+    display: relative;
+    text-align: center;
+}

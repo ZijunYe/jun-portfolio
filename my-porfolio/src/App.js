@@ -2,6 +2,7 @@ import './App.css';
 import Background from './components/Background'; 
 import Nav from './components/Nav'; 
 import Menu from './components/Menu'; 
+import Footer from './components/Footer';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <Nav />
       <Background />
       <Menu />
-      <p className='main-p'>All rights reserved made by zijun © 2023</p>
+      <Footer />
     </div>
   );
 }

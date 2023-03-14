@@ -5,7 +5,6 @@ class Background extends Component {
   render() {
     return (
       <div className="Background">
-        <img className="background-img"src="images/Background.png" alt="polaroid"/>
         <div className='background-text'>
             <h1 className='background-heading'>HEY, IT’S JUN HERE! <br/> NICE TO SEE YOU HERE:)</h1>
             <p>I am Zijun(most friends call my Jun:),
