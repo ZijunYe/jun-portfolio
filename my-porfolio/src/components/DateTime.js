@@ -18,7 +18,7 @@ export const DateTime = () => {
     let day = weekday[d.getDay()];
 
     return(
-        <p className='nav-time'>{day} {date.toLocaleTimeString()}</p>
+        <p className='navTime'>{day} {date.toLocaleTimeString()}</p>
     )
 }
 

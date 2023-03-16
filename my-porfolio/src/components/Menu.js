@@ -1,33 +1,39 @@
 import './main.css'; 
-import React, { Component } from 'react';
+import React, { useState } from 'react'; 
+
  
-class Menu extends Component {
-  render() {
+function Menu (props){
+
+  function setFile(){
+      setFile(true); 
+  }
+
     return (
       <div className="menu">
-        <div className="item menu-item1">
+          <button className="item menu-item1" onClick={() => {props.display(1);}}>
             <img src='images/icons/readme-icon.png' alt="readme file icon"/>
             <p>README.md</p>
-        </div>
-        
-        <div className="item menu-item2">
-            <img src='images/icons/project-icon.png' alt="folder icon"/>
+        </button>
+        <button className="item menu-item2" onClick={() => {props.display(2);}}>
+            <img src='images/folder_icon.png' alt="folder icon"/>
             <p>PROJECTS</p>
-        </div>
+        </button>
 
-        <div className="item menu-item3">
-            <img src='images/icons/blog-icon.png' alt="folder icon"/>
+        <button className="item menu-item3" onClick={() => {props.display(3);}}>
+            <img src='images/folder_icon.png' alt="folder icon"/>
             <p>BLOGS</p>
-        </div>
+        </button>
 
-        <div className="item menu-item4">
-            <img src='images/icons/trash-icon.png' alt="trash icon"/>
+        <button className="item menu-item4" onClick={() => {props.display(4);}}>
+            <img src='images/trash_icon.png' alt="trash icon"/>
             <p>TRASH</p>
-        </div>
-        
+        </button>
       </div>
+      
+
+
+
     );
   }
-}
  
-export default Menu
+export default Menu;

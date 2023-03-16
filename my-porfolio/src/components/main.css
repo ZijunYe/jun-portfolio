@@ -1,5 +1,5 @@
-.navbar{
-    background: #CCCCFF;
+.navBar{
+    background: #F3F1EA;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height:50px; 
@@ -8,21 +8,22 @@
     font-weight: normal;
     font-style: normal;
 }
-.nav-item{
+.navitem{
     margin-top: 1rem;
 }
-.nav-a{
+.nava{
     font-style: normal;
     font-weight: 900;
     text-decoration: none;
     padding-left: 2rem;
     color: #000000;
 }
-.nav-time{
+.navTime{
     right:2.5%; 
     position: absolute;
+    margin-top: 1rem;
 }
-.navbar img{
+.navBar img{
     margin-left: 1.5%;
 }
 
@@ -48,7 +49,12 @@
 .menu-item4{
     padding-left: 10px;
 }
+ 
+.menu button{
+    background: transparent;
+    border: transparent;
 
+}
 
 
 
@@ -58,29 +64,26 @@
     position:absolute; 
     display:flex; 
     left: 10%;
-    right:30%; 
-    margin-top: 6rem;
+    right:20%; 
+    margin-top: 4rem;
 }
 
 
 .background-text{
-    margin-top: 50px;
+    margin-top: 20px;
 }
-
+.background-img{
+    height: 32rem;
+    width: auto;
+    float: right;
+}
 .background-heading{
     font-size:3.5rem; 
-    color:#333399; 
+    color:#38465A; 
     font-family: 'ChicagoFLFRegular';
     font-weight: normal;
     font-style: normal;
 }
-
-/* Readme frame  */
-.readme{
-    background-color: #fff;
-    border: 1px solid #000000;
-}
-
 
 /* footer */ 
 .footer{
@@ -88,7 +91,39 @@
     top:87%; 
 }
 .footer p{
-    
     display: relative;
     text-align: center;
+    font-family: 'ChicagoFLFRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* readme page */
+.readme{
+    margin-top: 3rem;
+    margin-left: 8%; 
+    height:36rem; 
+    width:80%;
+    background-color: #fff;
+    border: 1px solid #000000;
+    position:absolute;
+}
+
+.topbar{
+    width:100%; 
+    margin-top: 0;
+}
+
+.bottombar{
+    bottom: 0px;
+    position:absolute; 
+    width:100%;
+     
+}
+
+.middlebar{
+    height:100%;
+    position:relative; 
+    width:6%; 
 }
