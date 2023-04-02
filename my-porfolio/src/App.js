@@ -1,9 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
+import { useState, useEffect,useRef} from 'react';
 import Background from './components/Background'; 
 import Readme from './components/Readme';
 import Error from "./components/Error"; 
+import Project from "./components/Project"; 
 import Nav from './components/Nav'; 
 import Menu from './components/Menu'; 
 import Footer from './components/Footer';
@@ -11,16 +12,34 @@ import Footer from './components/Footer';
 
 function App() {
   const [file, setFile] = useState(0);
+  let [isOpen, setIsOpen] = useState(true); 
+  let menuRef = useRef(); 
   const id = (data)=>{
     setFile(data)
   }
-  
+
+  const value = (v)=>{
+    setIsOpen(v)
+  }
+
+  useEffect(() =>{
+    document.addEventListener("mousedown",(event)=>{
+
+      if(!menuRef.current.contains(event.target)){setIsOpen(false); }
+  })
+})
+
+
   return (
     <div className="Container">
       <Nav />
-      <Background/>
-      {file ===1 && <Readme/>}
-      {file ===2 && <Error />}
+      <div ref={menuRef}> 
+        <Background/>
+        {file ===1 && isOpen? <Readme />:null }
+        {file ===2 && isOpen? <Project />:null}
+        {file ===3 && isOpen? <Error />: null}
+        {file ===4 && isOpen? <Error />:null}
+      </div>
       <Menu display={id}/>
       <Footer />
     </div>

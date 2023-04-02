@@ -28,9 +28,6 @@
 }
 
 
-
-
-
 .menu{
     top:15%;
     right:3.5%;  
@@ -57,8 +54,6 @@
 }
 
 
-
-
 /* Background text*/ 
 .Background{
     position:absolute; 
@@ -66,9 +61,8 @@
     left: 10%;
     right:20%; 
     margin-top: 4rem;
+    
 }
-
-
 .background-text{
     margin-top: 20px;
 }
@@ -100,7 +94,7 @@
 
 
 /* readme page */
-.readme{
+.frame{
     margin-top: 3rem;
     margin-left: 8%; 
     height:36rem; 
@@ -108,6 +102,7 @@
     background-color: #fff;
     border: 1px solid #000000;
     position:absolute;
+    z-index: 0;
 }
 
 .topbar{
@@ -119,11 +114,48 @@
     bottom: 0px;
     position:absolute; 
     width:100%;
-     
 }
 
 .middlebar{
     height:100%;
     position:relative; 
     width:6%; 
+    
+}
+
+
+
+/* Project */
+
+
+/* Error */
+.error-frame{
+    margin-top: 15rem;
+    margin-left: 35%; 
+    height:10rem; 
+    width:30%;
+    background-color: #EEEEEE;
+    border: 1px solid #000000;
+    position:absolute;
+    z-index: 0;
+}
+
+.error-top{
+    background-color: #CCCCCC;
+    /* border: 1px solid #000000; */
+    height:2rem; 
+    width:100%; 
+}
+
+.error-content{
+    display:flex; 
+    margin-top: 20px;
+    margin-left:30px;
+}
+
+.error-content p{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left:10px; 
+    font-size:larger;
 }

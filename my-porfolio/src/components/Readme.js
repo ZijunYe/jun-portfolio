@@ -1,30 +1,28 @@
 import './main.css'; 
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
  
-class Readme extends Component {
-  render() {
+function Readme(props){
+  
     return (
-      <container className="readme">
+      <div onClick={()=>{props.show(false)}}>
         
         <Row>
-        <img className='topbar' src="../images/frame/readme-titlebar.png"/>
+        <img className='topbar' src="../images/frame/readme-titlebar.png" alt='README title bar'/>
         </Row>
         <Row className="middle-item">
           <div className="readme-content">Here is content</div>
           {/* <img className='middlebar' src="../images/frame/rightbar.png"/> */}
         </Row>
         <Row>
-        <img className='bottombar' src="../images/frame/bottombar.png"/>
+        <img className='bottombar' src="../images/frame/readme-bottom-bar.png" alt="README bottom bar"/>
         </Row>
        
-        </container>
+        </div>
 
     );
-  }
 }
  
 export default Readme; 
