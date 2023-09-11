@@ -1,0 +1,30 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F0E8;
+}
+
+.links{
+  display: flex; 
+}
+
+.links a{
+  margin-left: 8px;
+  text-decoration:none; 
+  color:#000;
+}
+
+.intro{
+  display:block;
+  max-width: 350px;
+
+}
+
+.links{
+  text-decoration: none;
+  color:#000; 
+}
