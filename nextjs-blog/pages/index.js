@@ -30,7 +30,13 @@ export default function Home() {
             work / Reading / Running Journal / Projects / Baked Goods / Place I lived on / photograph
           */}
 
-          <h3 className={styles.links}><Link href="/work/first-job">Work</Link></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Work</Link><img src="/work-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Projects</Link><img src="/project-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Runner Journal</Link><img src="/running-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Reading</Link><img src="/reading-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Baked Goods</Link><img src="/baking-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Place I lived on</Link><img src="/place-icon.png"></img></h3>
+          <h3 className={styles.links}><Link href="/work/first-job">Photograph</Link><img src="/camera-icon.png"></img></h3>
 
 
       </div>
