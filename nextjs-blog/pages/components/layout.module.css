@@ -7,7 +7,31 @@
 
 
   .vertical{
-    border-left:2px solid black; 
+    border-left:1px solid black; 
     height:80vh; 
     overflow-y:auto;
+   
+  }
+
+  .content{
+    padding: 0em 2em 0em 2em;
+  }
+
+  @media (max-width: 1000px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .container {
+      /* max-width: 36rem; */
+      padding: 0 3rem;
+      display:inline-block;
+    }
+
+    .vertical{
+      /* border-left:1px solid black;  */
+      border-top: 1px solid black;
+      height:0;
+      width: 80vh;
+      overflow-x:auto;
+      /* margin-right: 2em; */
+    }
+
   }

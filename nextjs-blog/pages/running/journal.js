@@ -1,13 +1,14 @@
 import Link from 'next/link'; 
 import Layout from '../components/layout';
 
-export default function FirstJob(){
+export default function Journal(){
     return(
         <Layout>
-            <h1>First Job</h1>
-            <h2>
+            <h1>Runner Journal</h1>
+            <h2>Coming soon!</h2>
+            <h3>
                 <Link href="/">Back to homepage</Link>
-            </h2>
+            </h3>
         </Layout>
     ); 
 }
