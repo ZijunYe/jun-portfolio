@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import styles from './navbar.module.css'; 
 import Link from 'next/link'; 
+import { usePathname } from 'next/navigation'; 
 
 export default function NavBar(){
+    const pathname = usePathname();
+    const name = (pathname.split('/'))[1];
+    console.log(name); 
     const [selectedLink, setSelectedLink] = useState(null);
 
     const handleLinkClick = (linkName) => {
@@ -11,9 +15,9 @@ export default function NavBar(){
     
     return <div className={styles.intro}>
         <div className={styles.contact}>
-        <a class="link" href="https://www.linkedin.com/in/zijunye/">LinkedIn</a>
-        <a class="link" href="https://github.com/ZijunYe">Github</a>
-        <a class="link" href="mailto:zye072@uottawa.ca">Email</a>
+        <a className="link" href="https://www.linkedin.com/in/zijunye/">LinkedIn</a>
+        <a className="link" href="https://github.com/ZijunYe">Github</a>
+        <a className="link" href="mailto:zye072@uottawa.ca">Email</a>
         </div>
       <h2>Hi there, I am <span className={styles.deco}>Zijun</span>!</h2>
       <p> I’m 4th year computer science student at uOttawa. <br/>
@@ -26,21 +30,21 @@ export default function NavBar(){
       */}
 
      <h4 className={styles.item}>
-        <Link className={selectedLink === 'work' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('work')}>
+        <Link className={name === 'work' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/menu" onClick={() => handleLinkClick('work')}>
           Work
         </Link>
         <img src="/work-icon.png" alt="Work Icon" />
       </h4> 
 
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'project' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('project')}>
+        <Link className={name === 'projects' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/projects/menu" onClick={() => handleLinkClick('projects')}>
           Projects
         </Link>
         <img src="/project-icon.png"></img>
       </h4> 
 
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'run' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('run')}>
+        <Link className={name === 'running' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/running/journal" onClick={() => handleLinkClick('run')}>
           Runner Journal
         </Link>
         <img src="/running-icon.png"></img>
@@ -48,28 +52,28 @@ export default function NavBar(){
 
       
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'read' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('read')}>
+        <Link className={name === 'reading' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/reading/book" onClick={() => handleLinkClick('read')}>
           Reading
         </Link>
-        <img src="/running-icon.png"></img>
+        <img src="/reading-icon.png"></img>
       </h4> 
 
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'bake' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('bake')}>
+        <Link className={name === 'bake' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/bake/menu" onClick={() => handleLinkClick('bake')}>
           Baked Goods
         </Link>
         <img src="/baking-icon.png"></img>
       </h4> 
 
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'place' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('place')}>
+        <Link className={name === 'place' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/place/menu" onClick={() => handleLinkClick('place')}>
           Place I lived on
         </Link>
         <img src="/place-icon.png"></img>
       </h4> 
 
       <h4 className={styles.item}>
-        <Link className={selectedLink === 'photo' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/work/first-job" onClick={() => handleLinkClick('photo')}>
+        <Link className={name === 'photo' ? `${styles.links} ${styles.selectedLink}` : styles.links} href="/photo/menu" onClick={() => handleLinkClick('photo')}>
           Photograph
         </Link>
       <img src="/camera-icon.png"></img>
