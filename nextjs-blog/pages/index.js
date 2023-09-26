@@ -7,10 +7,6 @@ export default function Home() {
   return (
 
     <div className={styles.container}>
-      <Head>
-        <title>Zijun Portfolio</title>
-        <link rel="icon" href="/ZijunYe.ico" />
-      </Head>
 
       {/* <div className={styles.intro}> */}
         {/* <div className={styles.contact}>

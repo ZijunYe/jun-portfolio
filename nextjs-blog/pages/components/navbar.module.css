@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
 .contact{
     display: flex; 
     padding-bottom: 30px;
@@ -6,7 +9,10 @@
   .contact a{
     margin-right: 2em;
     text-decoration:none; 
-    color:#000;
+    color:#27283A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
   }
   
   .contact a:hover{
@@ -15,20 +21,19 @@
   
   .intro{
     display:block;
-    max-width: 350px;
+    max-width: 380px;
     padding: 0em 2em 0em 2em;
   }
-  
-  .deco{
-    /* text-decoration: underline;
-    text-decoration-color: #FFBF1C; */
-    text-decoration-thickness: 5px;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255, 191, 28, 1) 40%, rgba(255, 191, 28, 1) 100%);
+
+  .item{
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
+
   
   .links a{
     text-decoration:none; 
-    color:#000;
+    color:#27283A;
   }
   
   .links a:hover{
@@ -36,14 +41,17 @@
   }
 
  .intro p{
-    line-height: 1.8;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .links{
     text-decoration: none;
-    color:#000; 
+    color:#27283A; 
     margin:0px;
     margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
   }
 
 
@@ -55,4 +63,79 @@
   .item img{
     width: 8%;
     margin-left:5px;
+  }
+
+  .intro h2{
+    color:#27283A; 
+  }
+
+  .intro p{
+    color:#27283A;
+  }
+
+  .text-with-underline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .text-with-underline h2 {
+    margin-bottom: 0px;
+  } */
+
+  .underline {
+    width: 100px; /* Adjust the width as needed */
+    margin-left: 150px;
+    position: absolute; 
+  }
+
+  .title h2{
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .nav{
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7{
+    position: absolute;
+    width: 150px;
+    left: 60px;
+  }
+
+ 
+  .circle3{
+    width:280px;
+    height:90px; 
+    left:30px;
+    transform:rotate(12deg) ;
+  }
+
+  .circle4{
+    padding-top: 5px;
+  }
+
+  .circle5{
+    width:180px;
+    height:85px;
+    left:70px; 
+    transform:rotate(12deg) ;
+  }
+
+  .circle6{
+    width:300px;
+    height:90px; 
+    left:15px;
+    transform:rotate(12deg) ;
+  }
+
+  .circle7{
+    width:180px;
+    height:80px; 
+    left:70px;
+    transform:rotate(13deg)
   }
