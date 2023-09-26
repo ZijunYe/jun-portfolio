@@ -110,8 +110,9 @@
  
   .circle3{
     width:280px;
-    height:100px; 
+    height:90px; 
     left:30px;
+    transform:rotate(12deg) ;
   }
 
   .circle4{
@@ -120,18 +121,21 @@
 
   .circle5{
     width:180px;
-    height:100px;
+    height:85px;
     left:70px; 
+    transform:rotate(12deg) ;
   }
 
   .circle6{
     width:300px;
-    height:100px; 
-    left:6px;
+    height:90px; 
+    left:15px;
+    transform:rotate(12deg) ;
   }
 
   .circle7{
     width:180px;
-    height:100px; 
-    left:60px;
+    height:80px; 
+    left:70px;
+    transform:rotate(13deg)
   }
