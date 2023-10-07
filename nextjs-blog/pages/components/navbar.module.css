@@ -2,7 +2,7 @@
 
 .contact{
     display: flex; 
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
   
   .contact a{
@@ -21,7 +21,8 @@
   .intro{
     display:block;
     max-width: 380px;
-    padding: 0em 2em 0em 2em;
+    padding: 0em 2em 2em 2em;
+    max-height: 80vh;
   }
 
   .item{
@@ -40,7 +41,7 @@
   }
 
  .intro p{
-    line-height: 2;
+    line-height: 1.6;
     font-family: 'Space Mono', monospace;
   }
 
@@ -85,20 +86,20 @@
   .underline {
     width: 120px; /* Adjust the width as needed */
     left: 310px;
-    top:145px;
+    top:85px;
     position: absolute; 
     z-index: -1;
   }
 
   .underline2{
     position: absolute;
-    top:328px;
+    top:244px;
     z-index:-1;
   }
 
   .underline3{
     position: absolute;
-    top:360px;
+    top:266.5px;
     left:120px;
     z-index:-1; 
     width:300px; 
@@ -153,4 +154,16 @@
     height:80px; 
     left:70px;
     transform:rotate(13deg)
+  }
+
+
+  @media (max-width: 1000px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .intro{
+    
+      padding: 0em 2em 6em 2em;
+
+    }
+  
+
   }

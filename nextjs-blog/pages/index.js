@@ -26,15 +26,14 @@ export default function Home() {
             <img src= "/graphic/NameLineMarker.svg" alt="Underline" className={styles.underline}/>
         </div>
 
-
         <div className={styles.introduction}>
+        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
+        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/>
         <p> I’m 4th year computer science student at uOttawa. 
         I just wrapped up my internship at Morgan Stanley and currently working at Trend Micro.
         I love crafting user interface as well as developing software for web/mobile! 
         Outside of work, you will most likely find me running, baking or seeking good places to eat;)
         </p>
-        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
-        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/>
         </div>
 
         {/* Navigation Bar 
