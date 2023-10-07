@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .contact{
     display: flex; 
@@ -10,7 +9,7 @@
     margin-right: 2em;
     text-decoration:none; 
     color:#27283A;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
     font-weight: 400;
 
   }
@@ -26,7 +25,7 @@
   }
 
   .item{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 
@@ -42,15 +41,15 @@
 
  .intro p{
     line-height: 2;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
   }
 
   .links{
     text-decoration: none;
     color:#27283A; 
     margin:0px;
-    margin-top: 15px;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
     font-weight: 600;
   }
 
@@ -84,14 +83,30 @@
   } */
 
   .underline {
-    width: 100px; /* Adjust the width as needed */
-    margin-left: 150px;
+    width: 120px; /* Adjust the width as needed */
+    left: 310px;
+    top:145px;
     position: absolute; 
+    z-index: -1;
+  }
+
+  .underline2{
+    position: absolute;
+    top:328px;
+    z-index:-1;
+  }
+
+  .underline3{
+    position: absolute;
+    top:360px;
+    left:120px;
+    z-index:-1; 
+    width:300px; 
   }
 
   .title h2{
     margin-bottom: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
     font-weight: 600;
   }
 

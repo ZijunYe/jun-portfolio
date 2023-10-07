@@ -30,15 +30,19 @@ export default function NavBar(){
 
         <div className={styles.title}>
             <h2>Hi there, I am Zijun Ye!</h2>
-            {/* <img src= "/graphic/LineMarker.svg" alt="Underline" className={styles.underline}/>  */}
+            <img src= "/graphic/NameLineMarker.svg" alt="Underline" className={styles.underline}/>
 
         </div>
-     
-      <p> I’m 4th year computer science student at uOttawa. 
-      I just wrapped up my internship at Morgan Stanley and currently working at Trend Micro.
-      I love crafting user interface as well as developing software for web/mobile! 
-      Outside of work, you will most likely find me running, baking or seeking good places to eat;)
-      </p>
+      <div className={styles.introduction}>
+        <p> I’m 4th year computer science student at uOttawa. 
+        I just wrapped up my internship at Morgan Stanley and currently working at Trend Micro.
+        I love crafting user interface as well as developing software for web/mobile! 
+        Outside of work, you will most likely find me running, baking or seeking good places to eat;)
+        </p>
+        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
+        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/>
+      </div>
+    
       {/* Navigation Bar 
         work / Reading / Running Journal / Projects / Baked Goods / Place I lived on / photograph
       */}
