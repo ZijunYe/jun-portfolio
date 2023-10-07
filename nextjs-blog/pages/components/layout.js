@@ -11,6 +11,5 @@ export default function Layout({children}){
         <div className={styles.vertical}></div>
         <div className={styles.content}>{children}</div>
     </div>
-        
     );
 }

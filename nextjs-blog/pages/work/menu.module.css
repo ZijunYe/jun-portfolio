@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.box{
+    overflow: auto;
+    max-height: 90vh;  
+}
+.bigTitle{
+    font-family: 'Space Mono', monospace;
+}
+
+.container{
+    visibility: hidden;
+    display: block;
+    height:10px;
+}
+
+.link{
+    color:#000; 
+    text-decoration: none;
+    float:right; 
+}
+
+.jobs{
+    color:black; 
+    font-family: 'Space Mono', monospace;
+}
+
+
+.jobs:hover .container{
+    visibility: visible;
+}
+
+.link:hover{
+    display: block;
+    text-decoration: underline;
+}
+
+.jobTitle{
+    text-decoration: none;
+    margin-bottom: 0px;
+    color:#000;
+}
+
+.jobTitle:hover{
+    text-decoration: underline;
+}
+
+.jobDetail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobDescription{
+    margin-top: 0px;
+}
