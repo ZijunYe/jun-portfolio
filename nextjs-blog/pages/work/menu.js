@@ -6,6 +6,7 @@ export default function Menu(){
     return(
         <Layout>
             <h1 className={styles.bigTitle}>Work Experience</h1>
+            <img src= "/graphic/LineMarker.svg" alt="Underline" className={styles.underline}/>
             <div className={styles.box}>
                     <div className={styles.jobs}>
                         <Link className={styles.jobTitle} href="/work/menu"><h3 className={styles.jobTitle}>Software Developer</h3></Link>
@@ -19,7 +20,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                       
+                      
                     </div>
                     <div className={styles.jobs}>
                         <Link className={styles.jobTitle} href="/work/morganStanley"><h3 className={styles.jobTitle}>Technology Analyst</h3></Link>
@@ -35,7 +36,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                       
+                      
                     </div>
 
                     <div className={styles.jobs}>
@@ -65,7 +66,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                       
+                 
                     </div>
             </div>
 

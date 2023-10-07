@@ -94,23 +94,23 @@
   } */
 
   .underline {
-    width: 100px; /* Adjust the width as needed */
-    top:128px;
+    width: 120px; /* Adjust the width as needed */
+    /* top:178px; */
     position: absolute; 
     margin-left:225px;
-
+    
 
   }
 
   .underline2{
     position: absolute;
-    top:300px;
+    margin-top:147px;
   }
 
   .underline3{
     position: absolute;
-    top:335px;
-    margin-left: 30px;
+    margin-top:180px;
+    margin-left: 50px;
     width:300px; 
   }
 
@@ -131,41 +131,4 @@
     text-decoration: underline;
   }
 
-  .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7{
-    position: absolute;
-    width: 150px;
-    left: 60px;
-  }
-
  
-  .circle3{
-    width:280px;
-    height:90px; 
-    left:30px;
-    transform:rotate(12deg) ;
-  }
-
-  .circle4{
-    padding-top: 5px;
-  }
-
-  .circle5{
-    width:180px;
-    height:85px;
-    left:70px; 
-    transform:rotate(12deg) ;
-  }
-
-  .circle6{
-    width:300px;
-    height:90px; 
-    left:15px;
-    transform:rotate(12deg) ;
-  }
-
-  .circle7{
-    width:180px;
-    height:80px; 
-    left:70px;
-    transform:rotate(13deg)
-  }

@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .box{
-    overflow: auto;
-    max-height: 90vh;  
+    overflow: scroll;
+    max-height: 80vh;  
+    -ms-overflow-style: none;
+    padding-right: 8em;
+}
+
+.box::-webkit-scrollbar{
+    display: none;
 }
 .bigTitle{
     font-family: 'Space Mono', monospace;
@@ -22,6 +28,7 @@
 .jobs{
     color:black; 
     font-family: 'Space Mono', monospace;
+    padding-bottom: 20px;
 }
 
 
@@ -51,4 +58,18 @@
 
 .jobDescription{
     margin-top: 0px;
+    line-height: 1.2;
 }
+
+.underline{
+    position: absolute; 
+    top:80px;
+}
+
+@media (max-width: 1000px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .underline{
+        top:875px;
+    }
+
+  }

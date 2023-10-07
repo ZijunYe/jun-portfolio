@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.bigTitle{
+    font-family: 'Space Mono', monospace;
+}
+
+.underline{
+  position: absolute;
+  top:80px;
+  width: 225px;
+  left:510px; 
+}
+@media (max-width: 1000px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .underline{
+        position: absolute;
+        left:72px; 
+        top:875px;
+    }
+
+  }
