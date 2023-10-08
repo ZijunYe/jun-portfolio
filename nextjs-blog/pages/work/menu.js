@@ -5,8 +5,8 @@ import styles from './menu.module.css';
 export default function Menu(){
     return(
         <Layout>
-            <h1 className={styles.bigTitle}>Work Experience</h1>
-            <img src= "/graphic/LineMarker.svg" alt="Underline" className={styles.underline}/>
+            <h1 className={styles.bigTitle}>👩‍💻Work Experience</h1>
+            {/* <img src= "/graphic/LineMarker.svg" alt="Underline" className={styles.underline}/> */}
             <div className={styles.box}>
                     <div className={styles.jobs}>
                         <Link className={styles.jobTitle} href="/work/menu"><h3 className={styles.jobTitle}>Software Developer</h3></Link>

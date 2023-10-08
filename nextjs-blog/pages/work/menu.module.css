@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .box{
     overflow: scroll;
-    max-height: 80vh;  
+    max-height: 70vh;  
     -ms-overflow-style: none;
     padding-right: 8em;
+
 }
 
 .box::-webkit-scrollbar{
@@ -66,7 +67,7 @@
     top:80px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .underline{
         top:875px;

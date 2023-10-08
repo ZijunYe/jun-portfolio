@@ -1,24 +1,22 @@
 .container {
     /* max-width: 36rem; */
-    padding: 1rem 3rem 0 3rem;
+    padding: 2rem 5rem 0 3rem;
     display:inline-flex;
-    height:90vh; 
-
+    height:80vh; 
   }
 
   .vertical{
     border-left:1px solid black; 
-    height:90vh; 
+    height:80vh; 
     overflow-y:auto;
   }
 
   .content{
     padding: 0em 2em 0em 2em;
-    
-    max-height: 90vh;  
+    max-height: 70vh;  
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .container {
       /* max-width: 36rem; */

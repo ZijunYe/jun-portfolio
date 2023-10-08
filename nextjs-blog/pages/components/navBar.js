@@ -30,7 +30,7 @@ export default function NavBar(){
 
         <div className={styles.title}>
             <h2>Hi there, I am Zijun Ye!</h2>
-            <img src= "/graphic/NameLineMarker.svg" alt="Underline" className={styles.underline}/>
+            {/* <img src= "/graphic/NameLineMarker.svg" alt="Underline" className={styles.underline}/> */}
 
         </div>
       <div className={styles.introduction}>
@@ -39,8 +39,8 @@ export default function NavBar(){
         I love crafting user interface as well as developing software for web/mobile! 
         Outside of work, you will most likely find me running, baking or seeking good places to eat;)
         </p>
-        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
-        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/>
+        {/* <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
+        <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/> */}
       </div>
     
       {/* Navigation Bar 
