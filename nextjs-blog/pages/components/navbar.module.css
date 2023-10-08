@@ -86,7 +86,7 @@
   .underline {
     width: 120px; /* Adjust the width as needed */
     left: 310px;
-    top:85px;
+    top:98px;
     position: absolute; 
     z-index: -1;
   }
@@ -157,7 +157,7 @@
   }
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .intro{
     
