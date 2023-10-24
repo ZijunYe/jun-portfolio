@@ -29,15 +29,14 @@ export default function NavBar(){
         </div>
 
         <div className={styles.title}>
-            <h2>Hi there, I am Zijun Ye!</h2>
-            {/* <img src= "/graphic/NameLineMarker.svg" alt="Underline" className={styles.underline}/> */}
+            <h2>Hi there, I am <span className={styles.highlight}>Zijun Ye</span>!</h2>
 
         </div>
       <div className={styles.introduction}>
         <p> I’m 4th year computer science student at uOttawa. 
-        I just wrapped up my internship at Morgan Stanley and currently working at Trend Micro.
+        I just wrapped up my internship at <Link className={styles.links} href="/work/morganStanley">Morgan Stanley</Link> and currently working at <Link className={styles.links} href="/work/trendmicro">Trend Micro</Link>.
         I love crafting user interface as well as developing software for web/mobile! 
-        Outside of work, you will most likely find me running, baking or seeking good places to eat;)
+        Outside of work, you will most likely find me <Link className={styles.links} href="/running/journal">running</Link>, <Link className={styles.links} href="/bake/menu">baking</Link> or seeking good places to eat;)
         </p>
         {/* <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
         <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/> */}

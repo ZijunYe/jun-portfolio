@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+.highlight{
+  background: linear-gradient(to top, #FFF49F 35%, transparent 50%);
+}
 
 .contact{
     display: flex; 
@@ -9,7 +13,7 @@
     margin-right: 2em;
     text-decoration:none; 
     color:#27283A;
-    font-family: 'Space Mono', monospace;
+    font-family: monospace;
     font-weight: 400;
 
   }
@@ -17,12 +21,23 @@
   .contact a:hover{
     text-decoration: underline;
   }
+
+  .title h2{
+    font-family: monospace;
+  }
   
   .intro{
     display:block;
     max-width: 380px;
     padding: 0em 2em 2em 2em;
     max-height: 80vh;
+
+  }
+
+  .underhighlight{
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #FFD27A;
   }
 
   .item{
@@ -42,7 +57,7 @@
 
  .intro p{
     line-height: 1.6;
-    font-family: 'Space Mono', monospace;
+    font-family: monospace;
   }
 
   .links{
@@ -50,7 +65,7 @@
     color:#27283A; 
     margin:0px;
     margin-top: 10px;
-    font-family: 'Space Mono', monospace;
+    font-family: monospace;
     font-weight: 600;
   }
 
@@ -107,7 +122,7 @@
 
   .title h2{
     margin-bottom: 0px;
-    font-family: 'Space Mono', monospace;
+    /* font-family: 'Space Mono', monospace; */
     font-weight: 600;
   }
 
