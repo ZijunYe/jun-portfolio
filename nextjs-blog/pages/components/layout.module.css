@@ -19,8 +19,7 @@
   @media (max-width: 1200px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .container {
-      /* max-width: 36rem; */
-      padding: 1rem 3rem 0 3rem;
+      width:fit-content;
       display:block;
     }
 
@@ -33,6 +32,9 @@
       margin-top: 80px;
       /* margin-right: 2em; */
       display:block; 
+    }
+    .content{
+      margin-top: 2em;
     }
 
   }
