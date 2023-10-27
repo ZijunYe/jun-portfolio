@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 export default function Menu(){
     return(
         <Layout>
-        
+             <h1>📷Gallery</h1>
             <h2>Coming soon!</h2>
             <h3>
                 <Link href="/">Back to homepage</Link>

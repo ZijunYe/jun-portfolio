@@ -31,7 +31,6 @@
     max-width: 380px;
     padding: 0em 2em 2em 2em;
     max-height: 80vh;
-
   }
 
   .underhighlight{
@@ -45,15 +44,16 @@
     margin-bottom: 15px;
   }
 
+  .item:hover{
+    text-decoration:underline;
+  }
+
   
   .links a{
     text-decoration:none; 
     color:#27283A;
   }
   
-  .links a:hover{
-    text-decoration: underline;
-  }
 
  .intro p{
     line-height: 1.6;
