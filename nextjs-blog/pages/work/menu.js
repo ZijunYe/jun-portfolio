@@ -17,10 +17,11 @@ export default function Menu(){
                         <p className={styles.jobDescription}>
                             This is my thrid coop term. Still in progress! 
                         </p>
+        
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                      
+                        <hr></hr>
                     </div>
                     <div className={styles.jobs}>
                         <Link className={styles.jobTitle} href="/work/morganStanley"><h3 className={styles.jobTitle}>Technology Analyst</h3></Link>
@@ -36,7 +37,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                      
+                        <hr></hr>
                     </div>
 
                     <div className={styles.jobs}>
@@ -51,7 +52,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                       
+                        <hr></hr>
                     </div>
 
                     <div className={styles.jobs}>
@@ -66,7 +67,7 @@ export default function Menu(){
                         <div className={styles.container}>
                             <Link className={styles.link} href="/work/morganStanley">read more →</Link>
                         </div>
-                 
+                        <hr></hr>
                     </div>
             </div>
 

@@ -1,7 +1,7 @@
 
 .box{
     overflow: scroll;
-    max-height: 80vh;  
+    max-height: 70vh;  
     -ms-overflow-style: none;
     /* padding-right: 8em;  */
     display: block;
@@ -52,7 +52,7 @@
 }
 
 .tools{
-    background-color:#EAF0F6;
+    background-color:#FEF8CA;
     border-radius: 10px;
     padding: 5px;
     margin-right: 5px;
@@ -64,12 +64,12 @@
     font-family: monospace;
     margin-right: 5px;
     border-radius: 10px;
-    border:2px solid #DEE5EE;
+    border:2px solid #FEF8CA;
     padding:6px; 
 }
 
 .icons:hover{
-    background-color: #DEE5EE;
+    background-color: #FEF8CA;
    
 }
 

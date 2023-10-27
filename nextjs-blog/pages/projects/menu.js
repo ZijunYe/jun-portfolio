@@ -5,7 +5,8 @@ import styles from './project-menu.module.css';
 
 export default function ProjectMenu(){
     const projects = [
-        // Define your project data here
+        // Define project data here
+        // Fullstack 
         {
           title: 'Edusentia',
           type:'fullstack', 
@@ -15,17 +16,67 @@ export default function ProjectMenu(){
           githubLink: 'https://github.com/ZijunYe/Edusentia',
           demoLink: 'https://www.youtube.com/watch?v=R-pi6GH-4dU',
         },
-
         {
-            title: 'MyPackage',
-            type:'frontend', 
-            date: 'Jul 2023',
-            tools: ['Angular', 'Typescript', 'Python', 'Flask', 'JSON'],
-            description: 'This is a full-stack web-based application...',
-            githubLink: 'https://github.com/ZijunYe/Edusentia',
-            demoLink: 'https://www.youtube.com/watch?v=R-pi6GH-4dU',
-          },
-        // Add more projects as needed
+          title: 'UYP-PMS',
+          type:'fullstack', 
+          date: 'Nov 2022',
+          tools: ['Angular', 'Typescript', 'Spring Boot','Java', 'GraphQL','MongoDB'],
+          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+          demoLink: 'https://www.youtube.com/watch?v=R-pi6GH-4dU',
+        },
+        {
+          title: 'Byblos Mobile',
+          type:'fullstack', 
+          date: 'Dec 2021',
+          tools: ['Android Studio', 'Python', 'XML', 'Firebase Database'],
+          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
+
+        // Frontend 
+        {
+          title: 'MyPackage',
+          type:'frontend', 
+          date: 'Jul 2023',
+          tools: ['React', 'JavaScript'],
+          description: 'This is a full-stack web-based application...',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
+        {
+          title: 'uOttawa Housing repair request center',
+          type:'frontend', 
+          date: 'Jun 2023',
+          tools: ['HTML', 'CSS', 'JavaScript'],
+          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
+
+        // UI protytpe
+        {
+          title: 'Planify',
+          type:'prototype', 
+          date: 'Feb 2023',
+          tools: ['Figma'],
+          description: 'This is a full-stack web-based application...',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
+        {
+          title: 'KepMoment',
+          type:'prototype', 
+          date: 'Jul 2022',
+          tools: ['Figma'],
+          description: 'This is a full-stack web-based application...',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
+        {
+          title: 'uOttawa course Dashboard',
+          type:'prototype', 
+          date: 'Jul 2022',
+          tools: ['Figma'],
+          description: 'This is a full-stack web-based application...',
+          githubLink: 'https://github.com/ZijunYe/Edusentia',
+        },
       ];
     
       const [selection, setSelection] = useState('All'); // Initialize selection state
@@ -80,13 +131,20 @@ export default function ProjectMenu(){
             <div>
               <a className={styles.icons} href={project.githubLink}>
                 <img src="/project-icons/github.png" alt="source code icon" className={styles.iconImage} />
-                <span className={styles.iconTitle}>Source Code</span>
+                <span className={styles.iconTitle}>Source</span>
               </a>
-              <a className={styles.icons} href={project.demoLink}>
-                <img src="/project-icons/youtube.png" alt="source code icon" className={styles.iconImage} />
-                <span className={styles.iconTitle}>Demo</span>
-              </a>
+
+              {project.demoLink && ( // Conditionally render the demo link
+                <a className={styles.icons} href={project.demoLink}>
+                  <img src="/project-icons/youtube.png" alt="source code icon" className={styles.iconImage} />
+                  <span className={styles.iconTitle}>Demo</span>
+                </a>
+              )}
+
+
             </div>
+
+            <hr></hr>
           </div>
         ))}
       </div> 
