@@ -1,9 +1,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 .highlight{
-  background: linear-gradient(to top, #FFF49F 35%, transparent 50%);
+  background: linear-gradient(to top, #BBCA9A 35%, transparent 50%);
 }
 
+.flower{
+  width:2em;
+  display: none;
+}
+
+.item:hover .flower{
+  display: inline;
+}
 .contact{
     display: flex; 
     padding-bottom: 5px;
@@ -42,13 +50,9 @@
   .item{
     margin-top: 10px;
     margin-bottom: 15px;
+    float: left;
   }
 
-  .item:hover{
-    text-decoration:underline;
-  }
-
-  
   .links a{
     text-decoration:none; 
     color:#27283A;
@@ -129,7 +133,14 @@
   .nav{
     display:flex; 
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+  }
+
+  .link{
+    text-decoration: none;
+    color:#27283A; 
+    font-family:monospace ;
+    
   }
 
   .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7{

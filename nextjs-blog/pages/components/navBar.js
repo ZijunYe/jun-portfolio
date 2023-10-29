@@ -8,14 +8,19 @@ import { usePathname } from 'next/navigation';
 
 export default function NavBar(){
     const pathname = usePathname();
+   
     const name = (pathname.split('/'))[1];
     console.log(name); 
     const [selectedLink, setSelectedLink] = useState(null);
 
     const handleLinkClick = (linkName) => {
-        setSelectedLink(linkName);
+      setSelectedLink(linkName);
     };
-    
+
+    const isLinkActive = (linkName) => {
+      return linkName === name || linkName === selectedLink;
+    };
+
     return <div className={styles.intro}>
 
        <Head>
@@ -46,89 +51,115 @@ export default function NavBar(){
         work / Reading / Running Journal / Projects / Baked Goods / Place I lived on / photograph
       */}
 
-      <div className={styles.nav}>
+    <div className={styles.nav}>
         <h4 className={styles.item}>
-              <Link className={styles.links} href="/work/menu">Work</Link>
-              <img src="/work-icon.png" alt="Work Icon" />
-            </h4> 
-            {name=='work' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle1}/>}
+        <Link className={styles.link} href="/work/menu">Work</Link>
+        {name != 'work' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='work' ? 'visible' : 'hidden', 
+          }}
+         />
+        </h4>
       </div>
+
      
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links}  href="/projects/menu">
+          <Link className={styles.link}  href="/projects/menu">
             Projects
           </Link>
-          <img src="/project-icon.png"></img>
+          {name != 'projects' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='projects' ? 'visible' : 'hidden', 
+          }}
+         />
+  
         </h4> 
-        {name === 'projects' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle2}/>}
+        {/* {name === 'projects' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle2}/>} */}
       </div>
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links} href="/running/journal">
+          <Link className={styles.link} href="/running/journal">
             Runner Journal
           </Link>
-          <img src="/running-icon.png"></img>
+          {name != 'running' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='running' ? 'visible' : 'hidden', 
+          }}
+         />
         </h4> 
-        {name === 'running' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle3}/>}
+        {/* {name === 'running' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle3}/>} */}
       </div>
       
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links} href="/reading/book" >
+          <Link className={styles.link} href="/reading/book" >
             Reading
           </Link>
-          <img src="/reading-icon.png"></img>
+          {name != 'reading' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='reading' ? 'visible' : 'hidden', 
+          }}
+         />
         </h4> 
-        {name === 'reading' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle4}/>}
+        {/* {name === 'reading' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle4}/>} */}
       </div>
       
       
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links} href="/bake/menu">
+          <Link className={styles.link} href="/bake/menu">
             Baked Goods
           </Link>
-          <img src="/baking-icon.png"></img>
+          {name != 'bake' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='bake' ? 'visible' : 'hidden', 
+          }}
+         />
         </h4> 
-        {name === 'bake' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle5}/>}
+        {/* {name === 'bake' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle5}/>} */}
 
       </div>
       
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links} href="/place/menu">
+          <Link className={styles.link} href="/place/menu">
             Place I lived on
           </Link>
-          <img src="/place-icon.png"></img>
+          {name != 'place' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='place' ? 'visible' : 'hidden', 
+          }}
+         />
         </h4> 
-        {name === 'place' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle6}/>}
+        {/* {name === 'place' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle6}/>} */}
       </div>
       
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.links} href="/photo/menu">
+          <Link className={styles.link} href="/photo/menu">
             Photograph
           </Link>
-        <img src="/camera-icon.png"></img>
+          {name != 'photo' && <img src="/flower.png" className={styles.flower} />}
+         <img src="/flower.png"  
+          style={{
+            visibility: name=='photo' ? 'visible' : 'hidden', 
+          }}
+         />
         </h4>
-        {name==='photo' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle7}/>}
+        {/* {name==='photo' && <img src= "/graphic/OvalMarker.svg" alt="circle" className={styles.circle7}/>} */}
       </div>
-      
-
-
-
-      {/* <h4 className={styles.links}><Link href="/work/first-job">Work</Link><img src="/work-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/projects/first-job">Projects</Link><img src="/project-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/running/first-job">Runner Journal</Link><img src="/running-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/reading/first-job">Reading</Link><img src="/reading-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/baking/first-job">Baked Goods</Link><img src="/baking-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/place/first-job">Place I lived on</Link><img src="/place-icon.png"></img></h4>
-      <h4 className={styles.links}><Link href="/photographk/first-job">Photograph</Link><img src="/camera-icon.png"></img></h4> */}
+    
   </div>
   
 }
