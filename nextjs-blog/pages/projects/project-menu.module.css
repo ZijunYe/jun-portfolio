@@ -44,9 +44,13 @@
 }
 
 .selection{
-    padding-top: 2em;
+    margin-top: 2em;
+    margin-left: 2em;
+    height: 2em;
+    width: 11em;
+    border-radius: 8px;
+    font-family: monospace;
     padding-left: 2em;
-    border-radius: 10px;
 }
 
 .project{

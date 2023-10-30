@@ -118,12 +118,12 @@ export default function ProjectMenu(){
         <Layout>
             <div className={styles.title}>
                 <h1 className={styles.bigTitle}>💻Projects</h1>
-                <div className={styles.selection}>
-                    <select onChange={(e) => setSelection(e.target.value)}>
-                        <option value="All">All</option>
-                        <option value="Fullstack">Fullstack</option>
-                        <option value="Frontend">Frontend</option>
-                        <option value="UIDesign">UI Design</option>
+                <div >
+                    <select className={styles.selection} onChange={(e) => setSelection(e.target.value)}>
+                        <option value="All"> All Types </option>
+                        <option value="Fullstack"> Fullstack</option>
+                        <option value="Frontend"> Frontend</option>
+                        <option value="UIDesign"> UI Design</option>
                     </select>
                 </div>
             </div>
