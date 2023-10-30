@@ -43,6 +43,7 @@
     font-family: monospace;
 }
 
+
 .selection{
     margin-top: 2em;
     margin-left: 2em;
@@ -80,11 +81,17 @@
     font-family:  monospace;
 }
 
+.applicationTools{
+    height: fit-content;
+    
+}
 .tools{
     background-color:#6B8C7E;
     border-radius: 5px;
     padding: 5px;
     margin-right: 5px;
+    display: inline-flexbox; 
+    justify-content: space-around;
     color:#fff; 
 }
 
@@ -126,4 +133,14 @@
         left:72px; 
         top:875px;
     }
+    .box{
+        overflow: scroll;
+        max-height: auto;   
+        -ms-overflow-style: none;
+        /* padding-right: 8em;  */
+        display: block;
+        /* min-width: 50em; */
+    }
+
   }
+

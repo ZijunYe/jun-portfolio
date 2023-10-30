@@ -12,7 +12,7 @@ export default function ProjectMenu(){
           type:'fullstack', 
           date: 'Jul 2023',
           tools: ['Angular', 'Typescript', 'Python', 'Flask', 'JSON'],
-          icon:"/projects/dashboard.png",
+          icon:"/projects/Edusentia.png",
           description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
           demoLink: 'https://www.youtube.com/watch?v=R-pi6GH-4dU',
@@ -22,10 +22,10 @@ export default function ProjectMenu(){
           type:'fullstack', 
           date: 'Nov 2022',
           tools: ['Angular', 'Typescript', 'Spring Boot','Java', 'GraphQL','MongoDB'],
-          icon:"/projects/dashboard.png",
-          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
-          githubLink: 'https://github.com/ZijunYe/Edusentia',
-          demoLink: 'https://www.youtube.com/watch?v=R-pi6GH-4dU',
+          icon:"/projects/UYP.png",
+          description: 'This is SEG3102 Software architecture course Project. ',
+          githubLink: 'https://github.com/ZijunYe/UYP-PMS',
+          demoLink: 'https://youtu.be/RXlMCf0Cd1M?si=oAd043dFLKujNDWh',
         },
         {
           title: '🚗Byblos Mobile',
@@ -46,6 +46,7 @@ export default function ProjectMenu(){
           icon:"/projects/dashboard.png",
           description: 'This is a full-stack web-based application...',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
+
         },
         {
           title: '🏠uOttawa Housing repair request center',
@@ -118,7 +119,7 @@ export default function ProjectMenu(){
         <Layout>
             <div className={styles.title}>
                 <h1 className={styles.bigTitle}>💻Projects</h1>
-                <div >
+                <div className={styles.selections} >
                     <select className={styles.selection} onChange={(e) => setSelection(e.target.value)}>
                         <option value="All"> All Types </option>
                         <option value="Fullstack"> Fullstack</option>
@@ -137,11 +138,13 @@ export default function ProjectMenu(){
             </div>
 
             <div classsName={styles.main}>
+
                 <div className={styles.projectTitle}>
                   <h2 className={styles.title}>{project.title}</h2>
                   <p className={styles.text}>{project.date}</p>
                 </div>
                 <div>
+                <div className={styles.applicationTools}>
                   <p className={styles.text}>
                     {project.tools.map((tool, index) => (
                       <span className={styles.tools} key={index}>
@@ -149,6 +152,7 @@ export default function ProjectMenu(){
                       </span>
                     ))}
                   </p>
+                </div>
                 </div>
 
                 <p className={styles.text}>{project.description}</p>
