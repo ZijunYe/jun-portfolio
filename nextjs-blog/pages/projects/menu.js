@@ -43,17 +43,17 @@ export default function ProjectMenu(){
           type:'frontend', 
           date: 'Jul 2023',
           tools: ['React', 'JavaScript'],
-          icon:"/projects/dashboard.png",
+          icon:"/projects/mypackage.png",
           description: 'This is a full-stack web-based application...',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
 
         },
         {
-          title: '🏠uOttawa Housing repair request center',
+          title: '🏠Housing repair request center',
           type:'frontend', 
           date: 'Jun 2023',
           tools: ['HTML', 'CSS', 'JavaScript','Bootstrap'],
-          icon:"/projects/dashboard.png",
+          icon:"/projects/repairCenter.png",
           description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
         },
@@ -75,7 +75,7 @@ export default function ProjectMenu(){
           type:'prototype', 
           date: 'Feb 2023',
           tools: ['Figma'],
-          icon:"/projects/dashboard.png",
+          icon:"/projects/planify.png",
           description: 'This is a full-stack web-based application...',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
         },
@@ -158,7 +158,7 @@ export default function ProjectMenu(){
                 <p className={styles.text}>{project.description}</p>
               <div>
                 <a className={styles.icons} href={project.githubLink}>
-                  <img src="/project-icons/github.png" alt="source code icon" className={styles.iconImage} />
+                  <img src="/project-icons/git.png" alt="source code icon" className={styles.iconImage} />
                   <span className={styles.iconTitle}>Source</span>
                 </a>
 
@@ -166,6 +166,13 @@ export default function ProjectMenu(){
                   <a className={styles.icons} href={project.demoLink}>
                     <img src="/project-icons/youtube.png" alt="source code icon" className={styles.iconImage} />
                     <span className={styles.iconTitle}>Demo</span>
+                  </a>
+                )}
+
+                {project.figmaLink && ( // Conditionally render the demo link
+                  <a className={styles.icons} href={project.demoLink}>
+                    <img src="/project-icons/figma.png" alt="source code icon" className={styles.iconImage} />
+                    <span className={styles.iconTitle}>Figma</span>
                   </a>
                 )}
             </div>

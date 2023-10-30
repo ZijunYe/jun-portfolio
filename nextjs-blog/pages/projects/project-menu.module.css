@@ -103,6 +103,7 @@
     border-radius: 10px;
     border:2px solid #6B8C7E;
     padding:6px; 
+    margin-top: 2px;
 }
 
 .icons:hover{
@@ -119,7 +120,7 @@
     /* margin-right: 10px; */
     /* margin-top: 3px; */
     position:relative;
-    top:8px 
+    top:12px 
 }
 
 .iconTitle{

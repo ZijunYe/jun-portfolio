@@ -1,0 +1,59 @@
+.bigTitle{
+    font-family: monospace;
+    margin-bottom: 40px;
+}
+.menuItems{
+    padding-left: 10px;
+}
+.title{
+    font-family: monospace;
+    display: block;
+    text-decoration: none;
+    color:#000; 
+    margin-bottom: 0px;
+}
+
+.title:hover{
+    text-decoration: underline; 
+}
+
+.preread{
+    font-family: monospace;
+    margin-top: 0px;
+}
+
+.stravaEmbed{
+    width:fit-content; 
+}
+
+.contentTitle{
+    margin-bottom: 0px;
+}
+.contentDate{
+    margin-top:0px; 
+}
+.content{
+    width: 55vw;
+    overflow: scroll;
+    max-height: 70vh;  
+    -ms-overflow-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+.routes{
+    display: block;
+    margin: 0 auto; /* Horizontally center the image */
+    width:75%;
+}
+
+.subtitle{
+    color:#B7B9BF;
+}
+
