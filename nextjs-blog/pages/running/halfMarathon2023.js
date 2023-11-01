@@ -15,7 +15,7 @@ export default function HalfMarathon2023(){
             The long run isn’t like short 5k run. If the 5k, I pursued is speed, then for long run like marathon, I pursed is the experience of the process.
             </h3>
 
-            <img className={styles.routes}src="/running/halfmarathon2023.png"></img>
+            <img className={styles.routes}src="/running/halfmarathon.png"></img>
 
             <h4 className={styles.subtitle}>Purpose </h4>
             <p>

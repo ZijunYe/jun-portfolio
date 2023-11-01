@@ -23,9 +23,9 @@ export default function ProjectMenu(){
           date: 'Nov 2022',
           tools: ['Angular', 'Typescript', 'Spring Boot','Java', 'GraphQL','MongoDB'],
           icon:"/projects/UYP.png",
-          description: 'This is SEG3102 Software architecture course Project. ',
+          description: 'This project consists in the development of a system for the recording and tracking of patients\’ medical prescriptions. Medication preparation, inventory tracking, and account billing are not part of the intended system.',
           githubLink: 'https://github.com/ZijunYe/UYP-PMS',
-          demoLink: 'https://youtu.be/RXlMCf0Cd1M?si=oAd043dFLKujNDWh',
+          demoLink: 'https://youtu.be/RXlMCf0Cd1M',
         },
         {
           title: '🚗Byblos Mobile',
@@ -33,8 +33,8 @@ export default function ProjectMenu(){
           date: 'Dec 2021',
           tools: ['Android Studio', 'Python', 'XML', 'Firebase Database'],
           icon:"/projects/byblos.png",
-          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
-          githubLink: 'https://github.com/ZijunYe/Edusentia',
+          description: 'The car rental system helps the company to manage customer requests. The mobile application designed functionality and interface to adapt to three main user types: Administrator, Service Provider, and customer. ',
+          githubLink: 'https://github.com/ZijunYe/CarRental_Mobile_application',
         },
 
         // Frontend 
@@ -44,8 +44,9 @@ export default function ProjectMenu(){
           date: 'Jul 2023',
           tools: ['React', 'JavaScript'],
           icon:"/projects/mypackage.png",
-          description: 'This is a full-stack web-based application...',
-          githubLink: 'https://github.com/ZijunYe/Edusentia',
+          description: 'The purpose of the website is to improve the workflow of package picking up between the uOttawa post office and the school residence.',
+          githubLink: 'https://github.com/ZijunYe/MyPackage2.0',
+          websitLink:'https://zijunye.github.io/MyPackage2.0/', 
 
         },
         {
@@ -54,20 +55,11 @@ export default function ProjectMenu(){
           date: 'Jun 2023',
           tools: ['HTML', 'CSS', 'JavaScript','Bootstrap'],
           icon:"/projects/repairCenter.png",
-          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
-          githubLink: 'https://github.com/ZijunYe/Edusentia',
+          description: 'The Application designed to resolved the difficulty in contacting the school\'s housing service to report maintenance issues for the residents.',    
+          githubLink: 'https://github.com/ZijunYe/repair-request-center',
+          figmaLink:'https://www.figma.com/file/YiY0a5hodXvOY4LUerPVxO/SEG3125-Project1-Repair-Business-Site?type=design&node-id=0-1&mode=design', 
+          websitLink:'https://zijunye.github.io/repair-request-center/#home',
         },
-        {
-          title: '🍰Sissi Bakery',
-          type:'frontend', 
-          date: 'Jun 2023',
-          tools: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-          icon:"/projects/sissiBakery.png",
-          description: 'This is a full-stack web-based application I made with two of my friends. It\'s a sentimental analysis application that benefits both students and the university in tracking course quality and students\' feedback. ',
-          githubLink: 'https://github.com/ZijunYe/Edusentia',
-        },
-
-
 
         // UI protytpe
         {
@@ -76,7 +68,7 @@ export default function ProjectMenu(){
           date: 'Feb 2023',
           tools: ['Figma'],
           icon:"/projects/planify.png",
-          description: 'This is a full-stack web-based application...',
+          description: 'The iwatch application designed in conUhack hackathon with two of my friends. The goal for the application are recording and notifying meetings/events.',
           githubLink: 'https://github.com/ZijunYe/Edusentia',
         },
         {
@@ -85,8 +77,8 @@ export default function ProjectMenu(){
           date: 'Jul 2022',
           tools: ['Figma'],
           icon:"/projects/kepmoment.png",
-          description: 'This is a full-stack web-based application...',
-          figmaLink:'https://www.figma.com/file/EH7yXpz3vvTK5nXw7ys7D7/KepMoment?type=design&node-id=0%3A1&mode=design&t=XI7AkAem5SavHTYj-1'
+          description: 'This is a Interface designed for camera shop mobile application. ',
+          figmaLink:'https://www.figma.com/file/EH7yXpz3vvTK5nXw7ys7D7/KepMoment?type=design&node-id=0-1&mode=design'
         },
         {
           title: '🎯uOttawa course Dashboard',
@@ -95,7 +87,7 @@ export default function ProjectMenu(){
           tools: ['Figma'],
           icon:"/projects/dashboard.png",
           description: 'This is a UI based project by using Figma. It a dashboard that designed for university to manage online class system such as find course material, track grades etc.',
-          figmaLink:'https://www.figma.com/file/vSm5v1GSPfFyLWIpFo7P38/dashboard?type=design&node-id=0%3A1&mode=design&t=GrBkqQDR8pdSM5rs-1'
+          figmaLink:'https://www.figma.com/file/vSm5v1GSPfFyLWIpFo7P38/dashboard?type=design&node-id=0%3A1&mode=design&t=4R8yulxZ7o6OjOPA-1',
         },
       ];
     
@@ -175,11 +167,17 @@ export default function ProjectMenu(){
                     <span className={styles.iconTitle}>Figma</span>
                   </a>
                 )}
+                 {project.websitLink && ( // Conditionally render the demo link
+                  <a className={styles.icons} href={project.demoLink}>
+                    <img src="/project-icons/weblink.png" alt="source code icon" className={styles.iconImage} />
+                    <span className={styles.iconTitle}>Website</span>
+                  </a>
+                )}
             </div>
 
-            <div className={styles.container}>
+            {/* <div className={styles.container}>
                 <Link className={styles.link} href="/work/morganStanley">read more →</Link>
-             </div>
+             </div> */}
             </div>
            
           </div>
