@@ -13,19 +13,6 @@ export default function Journal(){
         }, 
     ]
 
-    const [stravaScriptLoaded, setStravaScriptLoaded] = useState(false);
-
-    useEffect(() => {
-        if (!stravaScriptLoaded) {
-        // Add the Strava script only once
-        const script = document.createElement('script');
-        script.src = 'https://strava-embeds.com/embed.js';
-        script.async = true;
-        document.body.appendChild(script);
-        setStravaScriptLoaded(true);
-        }
-    }, [stravaScriptLoaded]);
-
     return(
         <Layout>
             <h1 className={styles.bigTitle}>🏃‍♀️Runner Journal</h1>
@@ -42,7 +29,6 @@ export default function Journal(){
 
 
             </div>
-            <div className={styles.stravaEmbed} data-embed-type="activity" data-embed-id="10044172208"></div>
         
            
         </Layout>
