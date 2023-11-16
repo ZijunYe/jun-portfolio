@@ -12,6 +12,12 @@
 .item:hover .flower{
   display: inline;
 }
+
+.topbar{
+  justify-content: space-between;
+  display: flex;
+}
+
 .contact{
     display: flex; 
     padding-bottom: 5px;

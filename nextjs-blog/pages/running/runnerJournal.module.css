@@ -62,7 +62,7 @@
 /* mobile view */
 @media (max-width: 1200px) {
     .content{
-        width: 80vw;
+        width: 100vw;
         margin-left: 2%;
         margin-right:2%;
         max-height: 100vh;  

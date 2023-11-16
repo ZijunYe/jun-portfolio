@@ -3,14 +3,11 @@ import { useState } from 'react';
 import styles from './navbar.module.css'; 
 import Link from 'next/link'; 
 import { usePathname } from 'next/navigation'; 
-// import underlineSVG from '../../public/graphic/LineMarker.svg'; 
-// import i from '/graphic/LineMarker.svg';
 
 export default function NavBar(){
     const pathname = usePathname();
    
     const name = (pathname.split('/'))[1];
-    console.log(name); 
     const [selectedLink, setSelectedLink] = useState(null);
 
     const handleLinkClick = (linkName) => {
@@ -27,12 +24,14 @@ export default function NavBar(){
         <title>Zijun Portfolio</title>
         <link rel="icon" href="/ZijunYe.ico" />
       </Head> 
-        <div className={styles.contact}>
-        <a className="link" href="https://www.linkedin.com/in/zijunye/">LinkedIn</a>
-        <a className="link" href="https://github.com/ZijunYe">Github</a>
-        <a className="link" href="mailto:zye072@uottawa.ca">Email</a>
+        <div className={styles.topbar}>
+          <div className={styles.contact}>
+            <a className="link" href="https://www.linkedin.com/in/zijunye/">LinkedIn</a>
+            <a className="link" href="https://github.com/ZijunYe">Github</a>
+            <a className="link" href="mailto:zye072@uottawa.ca">Email</a>
+          </div>
         </div>
-
+        
         <div className={styles.title}>
             <h2>Hi there, I am <span className={styles.highlight}>Zijun Ye</span>!</h2>
 
@@ -46,6 +45,7 @@ export default function NavBar(){
         {/* <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline2}/>
         <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/> */}
       </div>
+      
     
       {/* Navigation Bar 
         work / Reading / Running Journal / Projects / Baked Goods / Place I lived on / photograph
@@ -62,8 +62,6 @@ export default function NavBar(){
          />
         </h4>
       </div>
-
-     
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
