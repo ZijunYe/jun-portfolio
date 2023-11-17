@@ -37,8 +37,7 @@ export default function Layout({ children }) {
   }, [name, setNavbarVisible]);
 
   const navbarDisplayStyle = windowWidth  > 1200 ? 'flex' : navbarVisible ? 'block' : 'none';
-
-
+  
   // Function to toggle navbar visibility and closing animation
   const toggleNavbar = () => {
     setClosing(!navbarVisible); // Set closing state before toggling visibility
@@ -62,7 +61,7 @@ export default function Layout({ children }) {
 
       <div className={styles.open} style={{ display: navbarVisible ? 'none' : 'block' }}>
         <div onClick={toggleNavbar}>
-          <img className={styles.icon} src="/project-icons/menu.png"></img>
+          <img className={styles.icon} src="/project-icons/Menu.png"></img>
         </div>
       </div>
 
