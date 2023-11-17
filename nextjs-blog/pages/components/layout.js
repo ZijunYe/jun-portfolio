@@ -10,6 +10,25 @@ export default function Layout({ children }) {
   // State to track whether the navbar should be visible
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [closing, setClosing] = useState(false); // New state to manage closing animation
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    // Update window width on mount
+    setWindowWidth(window.innerWidth);
+
+    // Event listener to update window width on resize
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (name === 'menu') {
@@ -17,6 +36,8 @@ export default function Layout({ children }) {
     }
   }, [name, setNavbarVisible]);
 
+  const navbarDisplayStyle = windowWidth  > 1200 ? 'flex' : navbarVisible ? 'block' : 'none';
+  
   // Function to toggle navbar visibility and closing animation
   const toggleNavbar = () => {
     setClosing(!navbarVisible); // Set closing state before toggling visibility
@@ -28,8 +49,8 @@ export default function Layout({ children }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbar} style={{ display: navbarVisible ? 'flex' : 'none' }}>
-        <NavBar></NavBar>
+      <div className={styles.navbar} style={{ display: navbarDisplayStyle }}>
+        <div style={{ display: navbarVisible ? 'block' : 'none' }} ><NavBar></NavBar></div>
 
         <div className={styles.expand} onClick={toggleNavbar} style={{ display: navbarVisible ? 'block' : 'none' }}>
           <img className={`${styles.iconV} ${closing ? styles.closing : ''}`} src="/project-icons/Expand_left_double_light.png"></img>
