@@ -24,6 +24,7 @@ export default function NavBar(){
         <title>Zijun Portfolio</title>
         <link rel="icon" href="/ZijunYe.ico" />
       </Head> 
+
         <div className={styles.topbar}>
           <div className={styles.contact}>
             <a className="link" href="https://www.linkedin.com/in/zijunye/">LinkedIn</a>

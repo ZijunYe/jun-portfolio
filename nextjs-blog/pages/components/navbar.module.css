@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-
 .highlight{
   background: linear-gradient(to top, #BBCA9A 35%, transparent 50%);
 }
@@ -42,8 +40,8 @@
   
   .intro{
     display:block;
-    max-width: 380px;
-    padding: 0em 2em 2em 2em;
+    width: 380px;
+    padding: 1.5em 2em 2em 2em;
     max-height: 80vh;
   }
 

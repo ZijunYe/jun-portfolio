@@ -55,11 +55,10 @@
 }
 
 .project{
-    padding-right:5%; 
+    /* padding-right:5%;  */
     margin-bottom: 3em;
-    min-width: 60%;
+    /* min-width: 60%; */
     display:flex;
-
 }
 
 .underline{
@@ -141,6 +140,8 @@
         /* padding-right: 8em;  */
         display: block;
         /* min-width: 50em; */
+        max-height: fit-content; 
+        padding-right: 0px;
     }
 
   }

@@ -4,6 +4,7 @@ import styles from './menu.module.css';
 
 export default function Menu(){
     return(
+        
         <Layout>
             <h1 className={styles.bigTitle}>👩‍💻Work Experience</h1>
             {/* <img src= "/graphic/LineMarker.svg" alt="Underline" className={styles.underline}/> */}

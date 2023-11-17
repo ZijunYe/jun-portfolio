@@ -1,22 +1,37 @@
 .container {
-    padding: 2rem 5rem 0 3rem;
+    padding: 5rem 3rem 0 3rem;
     display:flex;
     height:80vh; 
+  }
+  .icon{
+    width:30px; 
   }
 
   .vertical{
     border-left:1px solid black; 
-    height:80vh; 
+    height:75vh; 
     overflow-y:auto;
+    margin-left: 10px;
+  }
+
+  .open{
+    margin-top: 22px;
+
   }
 
   .content{
-    padding: 0em 2em 0em 2em;
+    padding: 0em 0em 0em 2em;
     max-height: 80vh;  
     display: block;
   }
-
+  
   @media (max-width: 1200px) {
+    .container {
+      padding: 2rem 1rem 0 1rem;
+      display:flex;
+      height:80vh; 
+    }
+
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .container {
       width:fit-content;
@@ -35,8 +50,7 @@
     }
     .content{
       margin-top: 2em;
-      padding: 0em 1em 0em 1em;
-
+      padding-right: 0px;
     }
 
   }

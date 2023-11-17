@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import styles from './runnerJournal.module.css';
 import React, { useEffect, useState } from 'react';
 
+
 export default function Journal(){
     const journals =[
         {
@@ -14,23 +15,26 @@ export default function Journal(){
     ]
 
     return(
+
         <Layout>
             <h1 className={styles.bigTitle}>🏃‍♀️Runner Journal</h1>
 
             <div className={styles.menuItems}>
             {journals.map((journal, index) => (
                 <div className={styles.menuItems} key={index}>
-                   <Link className={styles.title}href={journal.link}>
+                <Link className={styles.title}href={journal.link}>
                     <h2><span className={styles.count}>{journal.count}</span> {journal.title}</h2>
-                   </Link>
-                   <p className={styles.preread}>{journal.preread}</p>
+                </Link>
+                <p className={styles.preread}>{journal.preread}</p>
                 </div>
             ))}
 
 
             </div>
-        
-           
+
+
         </Layout>
+
+        
     ); 
 }
