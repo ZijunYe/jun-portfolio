@@ -82,7 +82,7 @@ export default function NavBar(){
 
       <div className={styles.nav}>
         <h4 className={styles.item}>
-          <Link className={styles.link} href="/running/journal">
+          <Link className={styles.link} href="/running/menu">
             Runner Journal
           </Link>
           {name != 'running' && <img src="/flower.png" className={styles.flower} />}

@@ -6,12 +6,22 @@
   .icon{
     width:30px; 
   }
+  .iconV{
+    display: block;
+  }
+  .iconH{
+    display: None;
+  }
 
   .vertical{
     border-left:1px solid black; 
     height:75vh; 
     overflow-y:auto;
     margin-left: 10px;
+  }
+
+  .horizontal{
+    display: none;
   }
 
   .open{
@@ -38,19 +48,41 @@
       display:block;
     }
 
-    .vertical{
+    .expandIcon{
+      display: flex;
+    }
+
+    .iconV{
+      display: None;
+    }
+    .iconH{
+      display: inline;
+    }
+
+    .expand{
+      height: 20px;
+      display: flex;
+    }
+
+    .horizontal{
       /* border-left:1px solid black;  */
+      float:right; 
+      display: block;
       border-top: 1px solid black;
       height:0;
       width: 100vw;
       overflow-x:auto;
-      margin-top: 80px;
+      margin-top: 1em;
       /* margin-right: 2em; */
-      display:block; 
+      /* display:block;  */
+    }
+
+    .vertical{
+      display: none;
     }
     .content{
       margin-top: 2em;
       padding-right: 0px;
     }
-
+  
   }
