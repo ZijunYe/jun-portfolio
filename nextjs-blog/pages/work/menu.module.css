@@ -79,6 +79,7 @@
 
     .box{
         padding-right: 0px;
+        max-height: fit-content; 
     }
 
   }

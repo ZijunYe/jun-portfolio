@@ -36,6 +36,7 @@
 
 .title{
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -134,14 +135,17 @@
         top:875px;
     }
     .box{
-        overflow: scroll;
-        max-height: auto;   
-        -ms-overflow-style: none;
-        /* padding-right: 8em;  */
-        display: block;
+        width: 80vw;
         /* min-width: 50em; */
         max-height: fit-content; 
         padding-right: 0px;
+    }
+    .project{
+        display: block;
+       
+    }
+    .icon{
+        width:20em;
     }
 
   }
