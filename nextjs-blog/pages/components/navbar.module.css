@@ -41,7 +41,7 @@
   .intro{
     display:block;
     width: 380px;
-    padding: 1.5em 2em 2em 2em;
+    padding: 1.5em 2em 1em 2em;
     max-height: 80vh;
   }
 
@@ -191,7 +191,7 @@
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .intro{
     
-      padding: 0em 2em 6em 2em;
+      padding: 0em 2em 5em 2em;
 
     }
   
