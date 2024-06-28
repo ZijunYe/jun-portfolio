@@ -47,10 +47,7 @@ export default function NavBar(){
         <img src= "/graphic/WaveMarker.svg" alt="Underline" className={styles.underline3}/> */}
       </div>
       
-    
-      {/* Navigation Bar 
-        work / Reading / Running Journal / Projects / Baked Goods / Place I lived on / photograph
-      */}
+  
 
     <div className={styles.nav}>
         <h4 className={styles.item}>
